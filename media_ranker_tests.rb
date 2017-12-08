@@ -39,9 +39,8 @@ describe "Media Ranker" do
     login_button = @driver.find_element(:css, "[href='/login']")
     login_button.click
 
-
     # there's a timing issue, if the script moves too fast the username element
-    # may not be present. In live-coding, we added a sleeping for 2 seconds
+    # may not be present. In live-coding, we added a 2 second sleep
     # which works but is an unreliable way way to fix it.
     # comment to demonstrate a more robust way to do it.
     # sleep 2
